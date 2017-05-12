@@ -12,7 +12,8 @@ module.exports = function(config) {
         r.connect({
             host: config.host,
             port: config.port,
-            authKey: config.authKey
+            authKey: config.authKey,
+			ssl: config.ssl
         }, function(error, conn) {
             // Throws, if we don't have a connection, we won't do anything...
             if (error) throw error
