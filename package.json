@@ -4,7 +4,10 @@
   "description": "Data explorer for RethinkDB",
   "main": "app.js",
   "directories": {},
-  "scripts": {},
+  "scripts": {
+	"cloud": "node chateau -f cfg/cloud-config.js",
+	"local": "node chateau -f cfg/local-config.js"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/neumino/chateau"
